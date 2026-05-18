@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay Vardar'ın Sitesi</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23dfb76c%22><path d=%22M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z%22/></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg-animation"></canvas>
+
+    <nav class="navbar">
+    <div class="logo">B. Vardar</div> 
+    <ul class="nav-links">
+            <li><a href="#home"><i class="fa-solid fa-house-user"></i> Ana Sayfa</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user-tie"></i> Hakkımda</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Beceriler</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-cubes"></i> Projeler</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-id-card"></i> İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image-box fade-in">
+                <img src="BEKO.jpeg" alt="Berkay Vardar" class="hero-profile-img">
+            </div>
+            <div class="hero-content">
+                <h1 class="fade-in delay-1">Merhaba, Ben <span class="highlight">Berkay Vardar</span></h1>
+                <p class="fade-in delay-2">Kod ile Estetiği Birleştiren Full-Stack Geliştirici</p>
+                <a href="#projects" class="btn btn-primary fade-in delay-3">Projelerimi Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">Hakkımda</h2>
+        <div class="about-container">
+            
+            <div class="about-text-block">
+                <p>
+                    Merhaba, ben <strong>Berkay Vardar</strong>. Bilgisayar Programcılığı / Yazılım Geliştirme odaklı eğitim hayatımın ikinci yılındayım. 
+                    Yazılım dünyasında sadece kod yazmayı değil; bir sistemin baştan sona analiz edilmesini, mimarisinin kurgulanmasını ve modern tasarım trendleriyle harmanlanarak hayata geçirilmesini bir tutku olarak görüyorum.
+                </p>
+                <p>
+                    Geliştirme süreçlerinde <strong>PHP, C#, HTML5, CSS3 ve JavaScript</strong> gibi teknolojileri aktif olarak kullanıyor; aynı zamanda az kodla (low-code) inovatif çözümler üreten platformlar üzerinde projeler geliştiriyorum. Teknolojiyi ve estetiği bir araya getiren dinamik full-stack web uygulamaları tasarlamak en büyük odak noktam.
+                </p>
+                <p>
+                    Teknoloji dünyasının dışındaysa; otomotiv endüstrisindeki yenilikleri, elektrikli araç teknolojilerini ve yüksek performanslı mühendislik harikalarını yakından takip eden bir <strong>otomotiv tutkunuyum</strong>. Aynı zamanda kullanıcı deneyimine ve görsel algıya hitap eden modern moda akımları ile bilgisayar donanım mimarileri üzerine derinlemesine araştırmalar yapmaktan keyif alıyorum.
+                </p>
+            </div>
+
+            <div class="about-highlights-grid">
+                <div class="highlight-item-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>Eğitim</h4>
+                    <p>Üniversite - 2. Sınıf</p>
+                </div>
+                <div class="highlight-item-card">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h4>Odak Alanı</h4>
+                    <p>Full-Stack & Sistem Analizi</p>
+                </div>
+                <div class="highlight-item-card">
+                    <i class="fa-solid fa-car-side"></i>
+                    <h4>İlgi Alanları</h4>
+                    <p>Otomotiv, Moda & Teknoloji</p>
+                </div>
+            </div>
+            
+            <div class="cv-download-box">
+    <p class="cv-note">Benimle çalışmak veya detaylı profilimi incelemek isterseniz, güncel özgeçmişimi görüntüleyebilirsiniz:</p>
+    
+    <a href="cv_tr.pdf" target="_blank" class="btn btn-secondary">
+        <i class="fas fa-file-pdf"></i> Türkçe CV (Görüntüle)
+    </a>
+    
+    <a href="cv_en.pdf" target="_blank" class="btn btn-secondary">
+        <i class="fas fa-file-pdf"></i> English Resume (View)
+    </a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+    <h2 class="section-title">Becerilerim</h2>
+    <div class="skills-grid">
+        
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5 / CSS3</h3>
+            <p>Modern ve responsive arayüz tasarımı</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Dinamik ve interaktif web çözümleri</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-java"></i>
+            <h3>Java & C#</h3>
+            <p>Nesne tabanlı programlama ve otomasyon</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MSSQL / XML</h3>
+            <p>Veritabanı yönetimi ve veri modelleme</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-cubes"></i>
+            <h3>Kuika Low-Code</h3>
+            <p>Kuika Academy platform uzmanlığı</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-github"></i>
+            <h3>Git / GitHub</h3>
+            <p>Sürüm kontrolü ve proje yönetimi</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Adobe Photoshop</h3>
+            <p>Grafik tasarım ve dijital içerik üretimi</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-video"></i>
+            <h3>Premiere & After Effects</h3>
+            <p>Video kurgu ve sinematik efektler</p>
+        </div>
+
+    </div>
+</section>
+
+    <section id="projects" class="projects-section">
+    <h2 class="section-title">Projelerim</h2>
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <h3>Dinamik Hamburger Satış & Sipariş Sitesi</h3>
+            <p>Modern arayüze sahip, kullanıcıların menüleri inceleyip sepet oluşturabildiği, HTML5, CSS3 ve JavaScript altyapısıyla geliştirilmiş interaktif e-ticaret vitrini projesi.</p>
+            <div class="tech-tags"><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></div>
+            <a href="https://github.com/BerkayV07" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub'da Gör</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Oto Galeri Yönetim Otomasyonu</h3>
+            <p>C# Windows Forms mimarisi kullanılarak hazırlanan; galeri araç stok giriş-çıkış takibi, teknik arıza kayıtları ve müşteri satış süreçlerini yöneten masaüstü otomasyon sistemi.</p>
+            <div class="tech-tags"><span>C#</span> <span>WinForms</span> <span>SQL / XML</span></div>
+            <a href="https://github.com/BerkayV07" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub'da Gör</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Ağ Temelleri ve Topoloji Tasarımı</h3>
+            <p>Sistem analizi kurallarına uygun olarak kurgulanmış; alt ağlama (subnetting), yönlendirme protokolleri ve güvenli network mimarilerini içeren kapsamlı ağ simülasyon ve tasarım projesi.</p>
+            <div class="tech-tags"><span>Cisco Packet Tracer</span> <span>Network</span> <span>Sistem</span></div>
+            <a href="https://github.com/BerkayV07" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub'da Gör</a>
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">İletişim</h2>
+        <p class="contact-subtitle">Benimle iş birlikleri, projeler veya sistem analizi süreçleri için aşağıdaki kanallardan iletişime geçebilirsiniz.</p>
+        
+        <div class="contact-grid">
+            <a href="mailto:vardarberkay1@gmail.com" class="contact-card-item">
+    <div class="contact-icon-box">
+        <i class="fas fa-envelope"></i>
+    </div>
+    <h3>E-posta</h3>
+    <p>Sorularınız veya iş birlikleri için bana ulaşın.</p>
+    <div class="contact-action">
+        <span>vardarberkay1@gmail.com</span>
+        <i class="fas fa-arrow-right"></i>
+    </div>
+</a>
+
+            <a href="https://www.linkedin.com/in/berkay-vardar-b2371b3a0" target="_blank" class="contact-card-item">
+    <div class="contact-icon-box">
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <h3>LinkedIn</h3>
+    <p>Profesyonel ağımı incelemek ve bağlantı kurmak için tıklayın.</p>
+    <div class="contact-action">
+        <span>berkay-vardar</span>
+        <i class="fas fa-arrow-right"></i>
+    </div>
+</a>
+
+            <a href="https://github.com/BerkayV07" target="_blank" class="contact-card-item">
+    <div class="contact-icon-box">
+        <i class="fab fa-github"></i>
+    </div>
+    <h3>GitHub</h3>
+    <p>Geliştirdiğim projeleri, kaynak kodları ve commit geçmişimi inceleyin.</p>
+    <div class="contact-action">
+        <span>BerkayV07</span>
+        <i class="fas fa-arrow-right"></i>
+    </div>
+</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 | Berkay Vardar. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
